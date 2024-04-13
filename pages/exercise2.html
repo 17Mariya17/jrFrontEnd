@@ -99,8 +99,7 @@
                       class="form-check-input"
                       type="radio"
                       name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                      onclick="exercise1Check()"
+                      id="correctAnswer"
                     />
                     <label class="form-check-label" for="flexRadioDefault1">
                       No. Since this is a critical care event, both Hannah and
@@ -113,8 +112,7 @@
                       class="form-check-input"
                       type="radio"
                       name="flexRadioDefault"
-                      id="flexRadioDefault3"
-                      onclick="exercise1CheckCorrect()"
+                      id="wrongAnswer"
                     />
                     <label class="form-check-label" for="flexRadioDefault3">
                       Yes. Since Hannah is a licensed prosthetist/orthotist
@@ -133,9 +131,52 @@
 
             <!-- Submit Button -->
             <div class="d-flex pt-3 justify-content-center">
-              <button id="submit" type="button" class="btn btn-primary">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                onclick="exercise2Check()"
+              >
                 Submit
               </button>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modal-title fw-bold fs-5" id="exampleModalLabel">
+                      Please read carefully and try again
+                    </p>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Review the material by clicking on the Review button
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Review
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
