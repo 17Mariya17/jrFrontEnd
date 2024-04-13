@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../main.js"></script>
+  </head>
+  <body>
+    <div class="bg-light">
+      <!-- Container  -->
+      <div class="container">
+        <!-- Header section -->
+        <header
+          class="py-2 border-bottom d-flex flex-row justify-content-between sticky-top bg-light"
+        >
+          <!-- Logo -->
+          <img class="logo" src="../assets/images/logo.png" alt="" />
+          <nav class="nav nav-tabs border-0 text-secondary">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+            <a class="nav-link text-dark" href="">About us</a>
+            <a class="nav-link text-dark" href="">How to use</a>
+            <a class="nav-link text-dark" href="">To Learning</a>
+            <a class="nav-link text-dark" href="">FAQ</a>
+            <a class="nav-link text-dark" href="">Contacts</a>
+          </nav>
+        </header>
+
+        <!-- Main section -->
+        <div class="py-3">
+          <!-- Question description -->
+          <h3>Exercise 2</h3>
+          <!-- Question main part -->
+          <div class="border p-3 rounded bg-body-secondary">
+            <!-- Flexbox -->
+            <div
+              class="d-flex flex-row justify-content-between align-items-end"
+            >
+              <!-- Column 1 - Logo & Text -->
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <img
+                  class="logo_2"
+                  src="../assets/images/texas_department_of_licensing_and_regulation_logo-removebg-preview.png"
+                  alt=""
+                />
+                <h5 class="fw-bold">
+                  Jurisprudence Examination Course for Orthotists and
+                  Prosthetists
+                </h5>
+              </div>
+              <!-- Column 2 - Text -->
+              <p class="fw-bold text-end">Module 2: License Requirements</p>
+            </div>
+          </div>
+          <!-- Text -->
+          <h3 class="fw-bold pt-4">
+            Scenario: Licensed Prosthetist/Orthotist Assistant
+          </h3>
+          <p>
+            Let's take a look at a scenario involving Hannah. You will need to
+            answer the question correctly in order to proceed.
+          </p>
+
+          <!-- Question main part -->
+          <div class="border p-3 rounded bg-body-secondary">
+            <!-- Flexbox -->
+            <div class="d-flex flex-row gap-5">
+              <!-- Column 1 - Text -->
+              <div>
+                <p class="fw-bold">Customer 1: Danny</p>
+                <p>
+                  Hannah, a licensed prosthetist/orthotist assistant, is
+                  assisting licensed prosthetist Kate with a client's custom
+                  prosthesis fitting appointment. Jason, the on-site technician,
+                  joins them to make an adjustment to the prosthesis.
+                  <br />While the three of them are working on the fitting. Kate
+                  is called away for an emergency phone call.
+                </p>
+                <p>
+                  Can Hannah and Jason continue with the patient's custom
+                  prosthesis fitting appointment?
+                </p>
+                <!-- Options -->
+                <div class="pt-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      onclick="exercise1Check()"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      No. Since this is a critical care event, both Hannah and
+                      Jason must be in the physical presence of a supervising
+                      practitioner.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                      onclick="exercise1CheckCorrect()"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Yes. Since Hannah is a licensed prosthetist/orthotist
+                      assistant she can supervise Jason.
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Column 2 - Image -->
+              <img
+                class="question2-image"
+                src="../assets/images/doctor.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-flex pt-3 justify-content-center">
+              <button id="submit" type="button" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="d-flex gap-2 justify-content-center pt-3">
+            <!-- Back Button -->
+            <a
+              href="./exercise1.html"
+              type="button"
+              class="btn btn-outline-primary d-flex align-items-center gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                />
+              </svg>
+              <span>Back</span>
+            </a>
+            <!-- Next Button -->
+            <a
+              href="./exercise3.html "
+              type="button"
+              class="btn btn-outline-primary d-flex align-items-center gap-1"
+            >
+              <span>Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="bg-secondary g-0">
+        <footer class="container-xl pt-4 pb-3 px-4" data-bs-theme="dark">
+          <!-- Footer columns -->
+          <div class="row">
+            <!-- Menu column -->
+            <div
+              class="col-12 col-sm-6 col-md-2 mb-3 text-center text-sm-start"
+            >
+              <h5 class="text-light">Menu</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">About us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">How to use</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">To Learning</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">FAQ</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Exercises Column -->
+            <div
+              class="col-12 col-sm-6 col-md-2 mb-3 text-center text-sm-start"
+            >
+              <h5 class="text-light">Exercises</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="./exercise1.html" class="nav-link p-0 text-muted"
+                    >Exercise 1</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./exercise2.html" class="nav-link p-0 text-muted"
+                    >Exercise 2</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./exercise3.html" class="nav-link p-0 text-muted"
+                    >Exercise 3</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./exercise4.html" class="nav-link p-0 text-muted"
+                    >Exercise 4</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./exercise5.html" class="nav-link p-0 text-muted"
+                    >Exercise 5</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Information column -->
+            <div
+              class="col-12 col-sm-6 col-md-2 mb-3 text-center text-sm-start"
+            >
+              <h5 class="text-light">Information</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted"
+                    >Terms and conditions</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">Privacy policy</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="" class="nav-link p-0 text-muted">Copyrights</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Subscribe column -->
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5 class="text-light text-center text-sm-start">
+                  Subscribe to our newsletter
+                </h5>
+                <p class="text-muted text-center text-sm-start">
+                  Monthly digest of what's new and exciting from us.
+                </p>
+                <div
+                  class="d-flex flex-column flex-sm-row w-100 gap-2"
+                  data-bs-theme="light"
+                >
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-outline-light" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Copyright -->
+          <a
+            class="d-block link-light text-decoration-none text-center text-muted mt-4 mb-2"
+            >Powered by Mariia®</a
+          >
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -39,7 +39,17 @@ footer a:hover {
   height: auto;
 }
 
+.logo_2 {
+  max-width: 160px;
+  height: auto;
+}
+
 .question-image {
   max-width: 370px;
+  height: auto;
+}
+
+.question2-image {
+  max-width: 300px;
   height: auto;
 }
