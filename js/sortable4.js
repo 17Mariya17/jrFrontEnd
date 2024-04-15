@@ -1,8 +1,8 @@
+// Used: https://github.com/SortableJS/Sortable?tab=readme-ov-file#cdn
 // Exercise 4  - Sortable list
 Sortable.create(simpleList, {
   /* options */
   sort: true, // sorting inside list
-
   // Called by any change to the list (add / update / remove)
   onSort: function (/**Event*/ event) {
     // event.newIndex - new index of the element in the list
