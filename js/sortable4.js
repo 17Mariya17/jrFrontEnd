@@ -1,15 +1,12 @@
-// Simple list
+// Exercise 4  - Sortable list
 Sortable.create(simpleList, {
   /* options */
   sort: true, // sorting inside list
-  dataIdAttr: "data-id", // HTML attribute that is used by the `toArray()` method
 
   // Called by any change to the list (add / update / remove)
   onSort: function (/**Event*/ event) {
-    // same properties as onEnd
-    // event.newIndex - new index of the element
+    // event.newIndex - new index of the element in the list
     // event.item.id - id shows the correct position of the element in the list
-
     // If the index of the element is equal to the correct position of the element
     if (event.item.id == event.newIndex) {
       // Remove the old background
