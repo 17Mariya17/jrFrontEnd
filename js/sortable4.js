@@ -1,4 +1,37 @@
 // Simple list
 Sortable.create(simpleList, {
   /* options */
+  sort: true, // sorting inside list
+  dataIdAttr: "data-id", // HTML attribute that is used by the `toArray()` method
+
+  // Called by any change to the list (add / update / remove)
+  onSort: function (/**Event*/ event) {
+    // same properties as onEnd
+    // event.newIndex - new index of the element
+    // event.item.id - id shows the correct position of the element in the list
+
+    // If the index of the element is equal to the correct position of the element
+    if (event.item.id == event.newIndex) {
+      // Remove the old background
+      document
+        .getElementById(event.item.id)
+        .classList.remove("bg-body-secondary");
+      // Add class to show the right answer
+      document.getElementById(event.item.id).classList.add("bg-success");
+      document.getElementById(event.item.id).classList.add("text-light");
+    } else {
+      // If there is class to show the right answer
+      if (
+        document.getElementById(event.item.id).classList.contains("bg-success")
+      ) {
+        // Remove it
+        document.getElementById(event.item.id).classList.remove("bg-success");
+        document.getElementById(event.item.id).classList.remove("text-light");
+        // Add class with the normal background
+        document
+          .getElementById(event.item.id)
+          .classList.add("bg-body-secondary");
+      }
+    }
+  },
 });
