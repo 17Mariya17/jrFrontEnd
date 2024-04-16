@@ -39,151 +39,89 @@
             <a class="nav-link text-dark" href="">Contacts</a>
           </nav>
         </header>
-
-        <!-- Main section -->
-        <div class="py-3">
-          <!-- Question description -->
-          <h3>Exercise 1: Using the BAC Chart</h3>
-          <p>
-            For this exercise, let's practice using the BAC charts. For the
-            first two customers, you will need to determine their BAC based on
-            the information provided. For the last two customers, you will
-            decide after how many drinks would you expect to see signs of
-            intoxication for the customer.
-          </p>
-          <!-- Question main part -->
-          <div class="border p-3 rounded bg-body-secondary">
-            <!-- Flexbox -->
-            <div class="d-flex flex-row gap-4">
-              <!-- Column 1 - Image -->
-              <img
-                class="question-image"
-                src="../assets/images/Screenshot.png"
-                alt=""
-              />
-              <!-- Column 2 - Text -->
-              <div>
-                <p class="fw-bold">Customer 1: Danny</p>
-                <p>
-                  Danny is a 28 year old man who has been in your bar for 90
-                  minutes. It looks like Danny weighs about 120 pounds. In the
-                  time that Danny has been at the bar, he has had two 12 ounce
-                  beers.
-                </p>
-                <p>What is Danny's BAC?</p>
-                <p class="fst-italic text-decoration-underline text-primary">
-                  Click here to review the BAC Chart.
-                </p>
-              </div>
+        </div>
+      </div>
+      <!-- Home section-->
+      <div class="page-wrap">
+        <!-- Container  -->
+        <div class="container pt-5 text-center">
+          <h1 class="text-danger">ONLINE <span class="text-dark">ALCOHOL</span> <span class="text-danger"> &</span> <span class="text-dark">FOOD SAFETY</span> COURSES</h1>
+          <h5 class="pt-3">
+            Our comprehensive Alcohol and Food Safety courses are certified and
+            licensed in each state we service. <br> Our courses are offered
+            exclusively online, with live and email help to ensure you complete
+            your training quickly and easily.
+          </h5>
+          <!-- Main advantages section -->
+          <div class="d-flex flex-row justify-content-center gap-180 pt-4">
+            <!-- Affordable -->
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex flex-row justify-content-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+              </svg>
+              <h5 class="text-dark">Affordable</h5>
             </div>
-            <!-- Options -->
-            <div class="pt-3">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                  onclick="exercise1Check()"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  0.03
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault2"
-                  onclick="exercise1Check()"
-                />
-                <label class="form-check-label" for="flexRadioDefault2">
-                  0.04
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault3"
-                  onclick="exercise1CheckCorrect()"
-                />
-                <label class="form-check-label" for="flexRadioDefault3">
-                  0.06
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault4"
-                  onclick="exercise1Check()"
-                />
-                <label class="form-check-label" for="flexRadioDefault4">
-                  0.08
-                </label>
-              </div>
+            <!-- Fast & Easy Access -->
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex flex-row justify-content-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+              </svg>
+              <h5 class="text-dark">Fast & Easy Access</h5>
             </div>
-            <!-- Submit Button
-            <div class="d-flex justify-content-center">
-              <button id="submit" type="button" class="btn btn-primary">
-                Submit
-              </button>
-            </div> -->
-            <!-- Alert placeholder -->
-            <div class="pt-3 mb-n5" id="alert_placeholder"></div>
+            <!-- Risk Management -->
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex flex-row justify-content-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg>
+              <h5 class="text-dark">Risk Management</h5>
+            </div>
           </div>
-          <!-- Navigation Buttons -->
-          <div class="d-flex gap-2 justify-content-center pt-3">
-            <!-- Back Button -->
-            <a
-              href="./index.html"
-              type="button"
-              class="btn btn-outline-primary d-flex align-items-center gap-1"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                />
-              </svg>
-              <span>Back</span>
-            </a>
-            <!-- Next Button -->
-            <a
-              href="./exercise2.html"
-              type="button"
-              class="btn btn-outline-primary d-flex align-items-center gap-1"
-            >
-              <span>Next</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                />
-              </svg>
-            </a>
+              <!-- To Learning Button -->
+              <a href="./exercise1.html" type="button" class="btn  btn-dark btn-lg">To Learning</a>    
+        </div>    
+      </div>
+
+      <!-- FAQ section-->
+      <div class="accordion accordion-flush container py-3" id="accordionFlushExample">
+        <h3 class="text-danger text-center">FAQ</h3>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Why can't I login?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">You will not be able to login if: <br>
+              - You do not have an account on this system. Your account will be created during the purchase process. <br>
+              - You have forgotten your Login ID. <br>
+              - You have forgotten your password.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              I forgot my password!
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The easiest way to reset your password is to click on LOGIN, then click on the "Forgot Password?" link on the Login form.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              I forgot my login ID!
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">We can email your Login ID to you if you click on the "Forgot Login ID?" link in the Login form.</div>
           </div>
         </div>
       </div>
-
       <!-- Footer -->
       <div class="bg-secondary g-0">
         <footer class="container-xl pt-4 pb-3 px-4" data-bs-theme="dark">
@@ -196,7 +134,7 @@
               <h5 class="text-light">Menu</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="" class="nav-link p-0 text-muted">Home</a>
+                  <a href="./index.html" class="nav-link p-0 text-muted">Home</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a href="" class="nav-link p-0 text-muted">About us</a>

@@ -30,6 +30,9 @@ footer a:hover {
 
 .page-wrap {
   min-height: 100vh;
+  background-image: url("../assets/images/smilling_people.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -53,4 +56,8 @@ footer a:hover {
 .question2-image {
   max-width: 300px;
   height: auto;
+}
+
+.gap-180 {
+  gap: 180px;
 }
